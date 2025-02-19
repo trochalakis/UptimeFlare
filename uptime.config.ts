@@ -3,9 +3,7 @@ const pageConfig = {
   title: "CallieCorner Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'mailto:admin@calliecorner.net', label: 'Email', highlight: true },
   ],
 }
 
@@ -21,6 +19,18 @@ const workerConfig = {
       name: 'Authelia',
       method: 'GET',
       target: 'https://auth.calliecorner.net',
+    },
+    {
+      id: 'synapse',
+      name: 'Matrix',
+      method: 'GET',
+      target: 'https://matrix.calliecorner.net/_matrix/static/',
+    },
+    {
+      id: 'mastodon',
+      name: 'Mastodon',
+      method: 'GET',
+      target: 'https://mastodon.calliecorner.net',
     },
     // Example TCP Monitor
     {
