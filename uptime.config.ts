@@ -81,13 +81,13 @@ const workerConfig = {
       target: 'https://lounge.calliecorner.net',
     },
     {
-      id: 'ngircd',
-      name: 'IRC',
+      id: 'ssh',
+      name: 'CallieCorner SSH',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'irc.calliecorner.net:6667',
-      tooltip: 'CallieCorner IRC Server',
+      target: 'ssh.calliecorner.net:2269',
+      tooltip: 'CallieCorner SSH Server',
       timeout: 5000,
     },
   ],
