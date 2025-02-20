@@ -66,7 +66,7 @@ const workerConfig = {
       id: 'irc',
       name: 'IRC',
       method: 'TCP_PING',
-      target: '73.225.234.2:6667',
+      target: 'irc.calliecorner.net:6667',
     },
     {
       id: 'element',
