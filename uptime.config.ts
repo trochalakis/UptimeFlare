@@ -80,16 +80,6 @@ const workerConfig = {
       method: 'GET',
       target: 'https://lounge.calliecorner.net',
     },
-    {
-      id: 'ssh',
-      name: 'CallieCorner SSH',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: 'ssh.calliecorner.net:2269',
-      tooltip: 'CallieCorner SSH Server',
-      timeout: 5000,
-    },
   ],
   notification: {
     // [Optional] apprise API server URL
