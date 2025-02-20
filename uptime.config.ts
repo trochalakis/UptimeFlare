@@ -21,6 +21,36 @@ const workerConfig = {
       target: 'https://auth.calliecorner.net',
     },
     {
+      id: 'homarr',
+      name: 'Dashboard',
+      method: 'GET',
+      target: 'https://dash.calliecorner.net',
+    },
+    {
+      id: 'mokey',
+      name: 'Account Portal',
+      method: 'GET',
+      target: 'https://id.calliecorner.net',
+    },
+    {
+      id: 'pelicanpanel',
+      name: 'Pelican Panel',
+      method: 'GET',
+      target: 'https://panel.calliecorner.net',
+    },
+    {
+      id: 'bookstack',
+      name: 'Bookstack',
+      method: 'GET',
+      target: 'https://bookstack.calliecorner.net',
+    },
+    {
+      id: 'wastebin',
+      name: 'Wastebin',
+      method: 'GET',
+      target: 'https://bin.calliecorner.net',
+    },
+    {
       id: 'synapse',
       name: 'Matrix',
       method: 'GET',
@@ -31,6 +61,30 @@ const workerConfig = {
       name: 'Mastodon',
       method: 'GET',
       target: 'https://mastodon.calliecorner.net',
+    },
+    {
+      id: 'irc',
+      name: 'IRC',
+      method: 'TCP_PING',
+      target: 'direct.trochalakis.com:6667',
+    },
+    {
+      id: 'element',
+      name: 'Element',
+      method: 'GET',
+      target: 'https://element.calliecorner.net',
+    },
+    {
+      id: 'cinny',
+      name: 'Cinny',
+      method: 'GET',
+      target: 'https://cinny.calliecorner.net',
+    },
+    {
+      id: 'thelounge',
+      name: 'The Lounge',
+      method: 'GET',
+      target: 'https://lounge.calliecorner.net',
     },
     // Example TCP Monitor
     {
@@ -66,7 +120,6 @@ const workerConfig = {
     ) => {
       // This callback will be called when there's a status change for any monitor
       // Write any Typescript code here
-
       // This will not follow the grace period settings and will be called immediately when the status changes
       // You need to handle the grace period manually if you want to implement it
     },
