@@ -66,7 +66,7 @@ const workerConfig = {
       id: 'irc',
       name: 'IRC',
       method: 'TCP_PING',
-      target: 'direct.trochalakis.com:6667',
+      target: '73.225.234.2:6667',
     },
     {
       id: 'element',
@@ -91,7 +91,7 @@ const workerConfig = {
       id: 'calliecorner_ssh',
       name: 'CallieCorner SSH',
       method: 'TCP_PING',
-      target: 'ssh.calliecorner.net:2269',
+      target: '73.225.234.2:2269',
       timeout: 5000,
     },
   ],
