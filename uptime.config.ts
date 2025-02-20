@@ -80,6 +80,16 @@ const workerConfig = {
       method: 'GET',
       target: 'https://lounge.calliecorner.net',
     },
+    {
+      id: 'ngircd',
+      name: 'IRC',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: 'irc.calliecorner.net:6667',
+      tooltip: 'CallieCorner IRC Server',
+      timeout: 5000,
+    },
   ],
   notification: {
     // [Optional] apprise API server URL
