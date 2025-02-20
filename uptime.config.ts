@@ -63,12 +63,6 @@ const workerConfig = {
       target: 'https://mastodon.calliecorner.net',
     },
     {
-      id: 'irc',
-      name: 'IRC',
-      method: 'TCP_PING',
-      target: 'irc.calliecorner.net:6667',
-    },
-    {
       id: 'element',
       name: 'Element',
       method: 'GET',
@@ -85,14 +79,6 @@ const workerConfig = {
       name: 'The Lounge',
       method: 'GET',
       target: 'https://lounge.calliecorner.net',
-    },
-    // Example TCP Monitor
-    {
-      id: 'calliecorner_ssh',
-      name: 'CallieCorner SSH',
-      method: 'TCP_PING',
-      target: '73.225.234.2:2269',
-      timeout: 5000,
     },
   ],
   notification: {
