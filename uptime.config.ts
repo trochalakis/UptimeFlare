@@ -104,17 +104,10 @@ const workerConfig = {
     },
   ],
   notification: {
-    // [Optional] apprise API server URL
-    // if not specified, no notification will be sent
     appriseApiServer: "https://apprisevercel-chewbaccalakis-projects.vercel.app/notify",
-    // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
-    // if not specified, no notification will be sent
-    recipientUrl: "matrix://uptimeflare:sadspace63@matrix.calliecorner.net/!btPuxiCbrMiPAdhKBo:calliecorner.net",
-    // [Optional] timezone used in notification messages, default to "Etc/GMT"
+    // recipientUrl: "matrix://uptimeflare:sadspace63@matrix.calliecorner.net/!btPuxiCbrMiPAdhKBo:calliecorner.net",
+      recipientUrl: "pagerduty://688a877add924200c09ed41fadb771ea@u+4s6v2VfToBY6rHfL4g".
     timeZone: "America/Los_Angeles",
-    // [Optional] grace period in minutes before sending a notification
-    // notification will be sent only if the monitor is down for N continuous checks after the initial failure
-    // if not specified, notification will be sent immediately
   },
   callbacks: {
     onStatusChange: async (
