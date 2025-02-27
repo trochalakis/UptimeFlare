@@ -67,7 +67,7 @@ function formatStatusChangeNotification(
 
 async function notifyWithApprise(
   appriseApiServer: string,
-  recipientUrl: string | string[],
+  recipientUrl: string,
   title: string,
   body: string
 ) {
