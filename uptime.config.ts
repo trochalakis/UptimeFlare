@@ -106,6 +106,7 @@ const workerConfig = {
   notification: {
     appriseApiServer: "https://apprisevercel-chewbaccalakis-projects.vercel.app/notify",
     recipientUrl: "pagerduty://688a877add924200c09ed41fadb771ea@u+4s6v2VfToBY6rHfL4g",
+    recipientUrl: "matrix://uptimeflare:sadspace63@matrix.calliecorner.net/!btPuxiCbrMiPAdhKBo:calliecorner.net",
     timeZone: "America/Los_Angeles",
   },
   callbacks: {
