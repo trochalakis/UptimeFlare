@@ -28,6 +28,13 @@ const workerConfig = {
       tooltip: 'Camera NVR',
       target: 'https://frigate.trochalakis.com',
     },
+    {
+      id: 'hass',
+      name: 'Home Assistant',
+      method: 'GET',
+      tooltip: 'Home Automation and Smart Home System',
+      target: 'https://hass.trochalakis.com',
+    },
   ],
   notification: {
     appriseApiServer: "https://apprisevercel-chewbaccalakis-projects.vercel.app/notify",
