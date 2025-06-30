@@ -1,9 +1,10 @@
 import { Container, Group, Text } from '@mantine/core'
 import classes from '@/styles/Header.module.css'
 import { pageConfig } from '@/uptime.config'
+import { PageConfigLink } from '@/types/config'
 
 export default function Header() {
-  const linkToElement = (link: { label: string; link: string; highlight?: boolean }) => {
+  const linkToElement = (link: PageConfigLink) => {
     return (
       <a
         key={link.label}
@@ -21,7 +22,10 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="https://status.trochalakis.com" target="_blank">
+          <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">
+            <Text size="xl" span>
+              🕒
+            </Text>
             <Text
               size="xl"
               span
@@ -29,17 +33,17 @@ export default function Header() {
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
-              Trochalakis Status
+              UptimeFlare
             </Text>
           </a>
         </div>
 
         <Group gap={5} visibleFrom="sm">
-          {pageConfig.links.map(linkToElement)}
+          {pageConfig.links?.map(linkToElement)}
         </Group>
 
         <Group gap={5} hiddenFrom="sm">
-          {pageConfig.links.filter((link) => (link as any).highlight).map(linkToElement)}
+          {pageConfig.links?.filter((link) => link.highlight).map(linkToElement)}
         </Group>
       </Container>
     </header>
