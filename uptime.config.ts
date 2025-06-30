@@ -96,8 +96,6 @@ const workerConfig: WorkerConfig = {
 // Of course, you can leave it empty if you don't need this feature
 // const maintenances: MaintenanceConfig[] = []
 const maintenances: MaintenanceConfig[] = [
-  {
-  },
 ]
 
 // Don't forget this, otherwise compilation fails.
