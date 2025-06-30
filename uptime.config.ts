@@ -1,6 +1,6 @@
 import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
-const pageConfig = {
+const pageConfig: PageConfig = {
   // Title for your status page
   title: "Trochalakis Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
@@ -11,12 +11,10 @@ const pageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public': ['authelia', 'hass', 'mealie'],
-    '🔐 Authenticated': ['frigate'],
   },
 }
 
-const workerConfig = {
+const workerConfig: WorkerConfig = {
   // Write KV at most every 3 minutes unless the status changed
   kvWriteCooldownMinutes: 3,
   // Enable HTTP Basic auth for status page & API by uncommenting the line below, format `<USERNAME>:<PASSWORD>`
@@ -29,7 +27,8 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Authentication and Single Sign-On (SSO) service',
       target: 'https://auth.trochalakis.com',
-      checkProxy: 'worker://wnam'
+      checkProxy: 'worker://wnam',
+      checkProxyFallback: true,
     },
     {
       id: 'frigate',
@@ -37,7 +36,8 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Camera NVR',
       target: 'https://frigate.trochalakis.com',
-      checkProxy: 'worker://wnam'
+      checkProxy: 'worker://wnam',
+      checkProxyFallback: true,
     },
     {
       id: 'hass',
@@ -45,7 +45,8 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Home Automation and Control Platform',
       target: 'https://hass.trochalakis.com',
-      checkProxy: 'worker://wnam'
+      checkProxy: 'worker://wnam',
+      checkProxyFallback: true,
     },
     {
       id: 'mealie',
@@ -53,7 +54,8 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Recipe management and browsing service',
       target: 'https://mealie.trochalakis.com',
-      checkProxy: 'worker://wnam'
+      checkProxy: 'worker://wnam',
+      checkProxyFallback: true,
     },
   ],
   notification: {
