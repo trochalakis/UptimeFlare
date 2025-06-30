@@ -12,7 +12,7 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     'Services': ['authelia'],
-    'Other': ['frigate', 'hass', 'nealie'],
+    'Other': ['frigate', 'hass', 'mealie'],
   },
 }
 
