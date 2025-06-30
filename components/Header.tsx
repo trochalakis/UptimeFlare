@@ -21,7 +21,7 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="https://status.calliecorner.net" target="_blank">
+          <a href="https://status.trochalakis.com" target="_blank">
             <Text
               size="xl"
               span
@@ -29,7 +29,7 @@ export default function Header() {
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
-              CallieCorner Status
+              Trochalakis Status
             </Text>
           </a>
         </div>
