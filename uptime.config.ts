@@ -1,3 +1,5 @@
+import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
+
 const pageConfig = {
   // Title for your status page
   title: "Trochalakis Status Page",
