@@ -32,8 +32,15 @@ const workerConfig = {
       id: 'hass',
       name: 'Home Assistant',
       method: 'GET',
-      tooltip: 'Home Automation and Smart Home System',
+      tooltip: 'Home Automation and Control Platform',
       target: 'https://hass.trochalakis.com',
+    },
+    {
+      id: 'mealie',
+      name: 'Mealie',
+      method: 'GET',
+      tooltip: 'Recipe management and browsing service',
+      target: 'https://mealie.trochalakis.com',
     },
   ],
   notification: {
