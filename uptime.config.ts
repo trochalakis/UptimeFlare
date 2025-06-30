@@ -20,6 +20,7 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Authentication and Single Sign-On (SSO) service',
       target: 'https://auth.trochalakis.com',
+      checkProxy: 'worker://wnam'
     },
     {
       id: 'frigate',
@@ -27,6 +28,7 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Camera NVR',
       target: 'https://frigate.trochalakis.com',
+      checkProxy: 'worker://wnam'
     },
     {
       id: 'hass',
@@ -34,6 +36,7 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Home Automation and Control Platform',
       target: 'https://hass.trochalakis.com',
+      checkProxy: 'worker://wnam'
     },
     {
       id: 'mealie',
@@ -41,6 +44,7 @@ const workerConfig = {
       method: 'GET',
       tooltip: 'Recipe management and browsing service',
       target: 'https://mealie.trochalakis.com',
+      checkProxy: 'worker://wnam'
     },
   ],
   notification: {
